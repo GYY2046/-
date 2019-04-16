@@ -26,6 +26,6 @@ Truncate：一个截取数字的函数，以3中的MAC为参数，按照指定�
 
 ## 2. TOTP基于时间的一次性密码
 
-TOTP是Time-Based One Time Password的缩写。TOTP是在HOTP的基础上扩展的一个算法，算法细节定义在RFC6238(https://tools.ietf.org/html/rfc6238)，其核心在于把HOTP中的counter换成了时间T，可以简单的理解为一个当前时间的时间戳（unixtime）。一般实际应用中会固定一个时间的步长，比如30秒，60秒，120秒等等，也就是说再这个步长的时间内，基于TOTP算法算出的OTP值是一样的。
+TOTP是Time-Based One Time Password的缩写。TOTP是在HOTP的基础上扩展的一个算法，算法细节定义在[RFC6238](https://tools.ietf.org/html/rfc6238)，其核心在于把HOTP中的counter换成了时间T，可以简单的理解为一个当前时间的时间戳（unixtime）。一般实际应用中会固定一个时间的步长，比如30秒，60秒，120秒等等，也就是说再这个步长的时间内，基于TOTP算法算出的OTP值是一样的。
 
 ### 参考地址 [一次性密码 && 身份认证三要素](https://www.cnblogs.com/linianhui/p/security-one-time-password.html)
